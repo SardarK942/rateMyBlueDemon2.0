@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  "name": "Rate My BlueDemon Pop Up",
+   "version": "1.2",
+   "background": {
+           "scripts": ["background.js"],
+           "persistent": true
+   }
+   ,
+
+  
+   "permissions": [
+    "tabs",
+    "identity",
+    "http://localhost:9222/*",
+    "https://www.ratemyprofessors.com/*",
+		"https://campusconnect.depaul.edu/*"
+  ],
+  
+   
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'"
+  
+  }
